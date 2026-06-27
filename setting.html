@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <style>
+.row-container {
+  display: flex;
+}
+
+.left-column {
+  width: 250px;
+  background-color: black;
+  color: white;
+  min-height: 50vh; 
+  padding: 20px;
+  border-radius: 9px;
+}
+.left-column a{
+    display: flex;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    &:hover{
+        background-color: gray;
+        padding: 10px;
+    }
+}
+
+
+.right-column {
+  flex: 1;
+  background-color:rgb(215, 243, 243);
+  padding: 30px;              
+  display: flex;
+  flex-direction: column;     
+  gap: 20px;                  
+}
+
+
+.welcome-header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+.admin-box {
+  padding: 20px;
+  background-color: white;
+  border-radius: 9px;
+  text-align: center;
+  font-size: 20px;
+}
+footer{
+    text-align: center;
+    color: black;
+    position: relative;
+    margin-top: 260px;
+    
+    
+   
+}
+.set{
+    background-color:white;
+    border-radius: 20px;
+
+}
+.set label{
+    font-weight: bolder;
+    margin-left: 20px;
+}
+.set input{
+    font-weight: bolder;
+    width: 350px;
+    margin: 20px;
+    padding: 8px;
+}
+.set h3{
+  font-weight: bolder;
+  margin-left: 20px;
+ 
+}
+.set select{
+  margin-left: 20px;
+  padding: 5px;
+  width: 350px;
+
+}
+.set button{
+  background-color: rgba(10, 119, 26, 0.696);
+  padding: 10px;
+  color: white;
+  border: 2px solid rgb(128, 255, 0);
+  margin: 15px;
+  border-radius: 10px;
+
+  
+}
+</style>
+</head>
+
+<body>
+    <div class="row-container">
+  
+  <div class="left-column">
+    <h2>DASHBOARD</h2>
+    <a href="newdash.html">Home</a>
+    <a href="studentdash.html">Student</a>
+    <a href="setting.html">Settings</a>
+    <a href="logout1.html">logout</a>
+   
+  </div>
+
+  <div class="right-column">
+    
+    <div class="welcome-header">
+    Settings
+    </div>
+    <div class="set">
+            <form>
+              <h3>Profile Settings</h3>
+                <label>Username</label>
+                <br>
+                <input type="text" placeholder="Your username">
+                <br>
+                <label>Email</label>
+                <br>
+                <input type="email" placeholder="Your email address">
+                <br>
+                <label>Theme</label>
+                <br>
+                <select>
+                <option>Dark</option>
+                <option>Light</option>
+                </select>
+                <br>
+
+                <button type="submit">Save Settings</button>
+            </form>
+        </div>
+    <footer>&copy; By Nawaf CA252</footer>
+
+  </div>
+  
+
+</div>
+
+</body>
+</html>
